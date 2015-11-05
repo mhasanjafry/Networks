@@ -1,0 +1,28 @@
+import java.io.*;
+
+public class Message {
+
+
+		String Destination;
+		String FMValue;
+		String ToValue;
+		int HCVal;
+		String NPVal;
+		String VLNode;
+		String DATA_Val;
+
+		public Message(String msg) {
+			FMValue = msg.substring(0,2); //
+			ToValue = msg.substring(2,3);
+
+
+		}
+
+		String getSource(){
+			return FMValue;
+		}
+
+		String getDest(){
+			return ToValue;
+		}
+}
